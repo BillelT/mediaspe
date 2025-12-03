@@ -4,8 +4,7 @@
 
 @section('content')
 
-<h1 class="text-4xl font-bold text-red-500">Tailwind v3 fonctionne !</h1>
-
+<h1 class="text-4xl font-bold text-red-900 font-thin">Tailwind v3 fonctionne !</h1>
 
 @foreach($articles as $article)
 <article>
