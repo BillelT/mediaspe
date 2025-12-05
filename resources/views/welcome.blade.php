@@ -40,15 +40,18 @@
         <div class="flex-grow flex items-center justify-center px-5">
 
             @if(!$currentThemeId)
-            <div class="w-full max-w-sm aspect-square bg-green rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl relative z-20">
-                <div class="text-[8rem] font-bold text-black leading-[0.75]">K.</div>
-                <p class="text-xl font-bold text-black tracking-tight">Maintenant tu sais.</p>
+            <div class="flex flex-col gap-y-[32px] w-full">
+
+                <div class="w-full max-w-sm aspect-square bg-green rounded-3xl p-8 flex flex-col items-center justify-center text-center shadow-xl relative z-20">
+                    <div class="text-[8rem] font-bold text-black leading-[0.75]">K.</div>
+                    <p class="text-xl font-bold text-black tracking-tight">Maintenant tu sais.</p>
+                </div>
+                
+                <a href="/dashboard" class="flex-1 py-3 px-4 rounded-full font-bold text-white bg-black hover:bg-black/90 transition-colors flex items-center justify-center gap-2">
+                    Profil
+                </a>
             </div>
-
-            <a href="/dashboard" class="flex-1 py-3 px-4 rounded-full border-2 border-black font-bold text-black bg-transparent hover:bg-black/5 transition-colors flex items-center justify-center gap-2">
-                Profil
-            </a>
-
+                
             @elseif($article)
             <div class="w-full max-w-sm rounded-3xl p-6 relative z-20 flex flex-col gap-y-[16px]" style="background-color: {{ $article->theme->color }}; ">
 
