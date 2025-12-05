@@ -21,6 +21,11 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'saved_articles',
+    ];
+
+    protected $casts = [
+        'saved_articles' => 'array'
     ];
 
     /**
